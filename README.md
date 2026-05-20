@@ -41,7 +41,7 @@
 
 | Resources | Description |  
 |---|---|
-| [oh_my_git](https://ohmygit.org/) | Learning git by playing (maybe I should put that in the 5 years old)|
+| [oh_my_git](https://ohmygit.org/) | Enjoyable way to learn git|
 [Git book ](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain?utm_source=chatgpt.com)| The “official unofficial” deep Git book. 
  [v1 - ohmy,git ](https://ohshitgit.com/), [v2 - Dangit](https://dangitgit.com/?utm_source=chatgpt.com)  |  Did you ever feel like an idiot sandwich ?  save yourself in git
  [Git explorer](https://git.gaozih.com/)  | Find the right command for you
