@@ -19,7 +19,7 @@
 > “My sleep schedule died so this repository could live.”
 ---
 ## Holy Questions 
->  For anything new you wanna learn in depth, ask yourself these question.
+>  To learn anything in depth, ask these.
 1. What is it?
 2. Why does it exist?
 3. How do I use it?
