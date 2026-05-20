@@ -1,4 +1,4 @@
-#  
+# Document my progress and notes
 <p align="center">
   <img src="pic/curve_meme.jpeg" width="500" alt="Curve meme">
 </p>
