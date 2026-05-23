@@ -218,6 +218,8 @@ git rev-parse HEAD
 git cat-file <hash> 
 ```
 
+* `t`: type for the object. 
+* `p`: print the content for the object.
 
 ## Recover yourself (log)
 ```
