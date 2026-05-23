@@ -47,11 +47,12 @@ Switches branches or restores files.
 
 Git is not just a backup tool.
 
-Git is actually a **content-addressed versioned graph database**.
+Git is actually a **content-addressed versioned graph database**: Means the address of the **objects** are known by their hashed content.
 
 The most important concept:
 
 > Commits form a Directed Acyclic Graph (DAG).
+
 
 ---
 
@@ -65,8 +66,47 @@ A --- B --- C main
 
 Each commit points to parent commits.
 
-Branches are simply movable labels pointing to commits.
+> Commits are snapshots to content (after staging).
 
+
+- Branches are simply movable labels pointing to commits.
+- So: HEAD -> Branch -> Commit 
+- HEAD can point to commit as well.
+- i.e HEAD, Branches just a pointers, that points to commits.
+
+```
+git add(files staged) ---> git commit ---> files are hashed & saved in .git/objects -> git stores the content along side the hash file (inside it but comporessed)
+```
+
+Ex: 
+```
+echo "hello" > hello.txt 
+git add hello.txt 
+```
+To see the file hash(blob object) got to `.git/objects` -> the first 2 bytes of hash file is stored as a directory, and then the rest will be inside it as a file.
+```
+git cat-file -p <hash> -> a2dvdf...
+```
+
+->result: `hello`
+
+```
+Object:
+{
+  type: blob
+  content: "hello"
+}
+```
+> The hash is for the object itself not the file name.
+```
+file contents
+   ↓
+Git creates blob object
+   ↓
+Git hashes blob object
+   ↓
+hash becomes object ID
+```
 ---
 
 ## 6. Understanding HEAD and Branches
@@ -87,6 +127,7 @@ main -> D
 HEAD -> main
 ```
 
+> See the branches head points to in `.git/refs/head/`
 ---
 
 ## 7. The Staging Area 
@@ -169,9 +210,9 @@ git reset --hard
 
 Git stores four major object types:
 
-- Blob
-- Tree
-- Commit
+- Blob: Content of the files.
+- Tree: Directories 
+- Commit: 
 - Tag
 
 All objects are identified using SHA hashes.
