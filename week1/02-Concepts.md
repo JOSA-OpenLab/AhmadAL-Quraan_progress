@@ -246,3 +246,20 @@ git log --graph --decorate --oneline --all
 
 This helps visualize the commit graph directly.
 
+
+## Difference between revision and reference 
+
+* Reference: Any pointer that points to specific git object, i.e HEAD, main , ... -> you can find this phrase in commands like : `git reflog`
+
+* Revision: Some way to identify a specific version/object/commit -> i.e `git rev-parse HEAD`
+
+All of these valid revisions:
+```
+main
+HEAD
+abc123
+HEAD~1
+main^
+origin/main
+v1.0
+```

@@ -218,3 +218,11 @@ git rev-parse HEAD
 git cat-file <hash> 
 ```
 
+
+## Recover yourself (log)
+```
+git reflog show
+```
+* Will show you all the logs and moves (hashes) you did in your repo (specifically what happened with HEAD), and you can use to recover from any mistake you did. 
+
+> You can use `git switch -C <branch>` to any branch including main points to HEAD, useful when deleting content and recovering.
