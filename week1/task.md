@@ -44,5 +44,11 @@ git reflog show
 
 Task: Squash fixup commits, and reorder if needed.
 
-`git switch -c feature/refactor-history`
+`git switch -c squash-merge`
 
+I added some commits on `git switch -c squash merge` on this repo, then squashed them using `git rebase -i`
+
+![](/pic/squash.png)
+
+Opened a PR on this repo.
+![](/pic/PR_squash.png)
