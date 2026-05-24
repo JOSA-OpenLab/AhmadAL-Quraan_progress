@@ -37,4 +37,12 @@ git reflog show
 - Use `git reset --hard 16feaa3`
 ![](/pic/log_after_fix.png)
 
-* Our git log returned.
+* Old git log returned.
+
+
+# Squash 
+
+Task: Squash fixup commits, and reorder if needed.
+
+`git switch -c feature/refactor-history`
+
