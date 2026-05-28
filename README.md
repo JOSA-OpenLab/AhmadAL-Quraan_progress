@@ -32,6 +32,7 @@
 | Week | Topic |  
 |---|---|
 | [1](week1/) | Git Internals | 
+[2](week2/) | PR's
 
 
 ## Resources to useful stuff 
