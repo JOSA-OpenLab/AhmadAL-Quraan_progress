@@ -33,6 +33,8 @@
 |---|---|
 | [1](week1/) | Git Internals | 
 [2](week2/) | PR's
+[3] | Issue Triage & Bug
+Reproduction
 
 
 ## Resources to useful stuff 
