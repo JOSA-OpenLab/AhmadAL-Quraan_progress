@@ -1,0 +1,3 @@
+[submodule "week1/content/git_commands"]
+	path = week1/content/git_commands
+	url = https://github.com/AhmadAL-Quraan/git_commands
