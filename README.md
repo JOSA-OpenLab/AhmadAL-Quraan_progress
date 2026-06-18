@@ -33,8 +33,8 @@
 |---|---|
 | [1](week1/) | Git Internals | 
 [2](week2/) | PR's
-[3] | Issue Triage & Bug
-Reproduction
+[3](week3/) | Issue Triage & Bug Reproduction
+[4](week4/) | Code Review & the Maintainer Mindset
 
 
 ## Resources to useful stuff 
