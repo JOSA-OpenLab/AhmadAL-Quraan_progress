@@ -23,3 +23,31 @@ What that feature does: when the news mentions something like crude oil, gold, o
 | 3 | `test_cascade_no_relevant_news` | A headline with no commodity/macro keywords returns an empty list |
 | 4 | `test_cascade_empty_news_list` | Empty input doesn't error and returns `[]` |
 | 5 | `test_cascade_filtered_by_focus_ticker` | With `focus_ticker="HINDALCO"` set, only the Aluminum driver (which affects HINDALCO) survives, Crude Oil is filtered out even though it also matched |
+
+
+## Task2 
+
+Build a real workflow. Take any of your existing repos and add a complete
+.github/workflows/ci.yml with: lint, test, matrix on 2+ versions, caching, and a status
+badge in the README
+
+
+- I'm currently doing a project called ["Inception"](https://github.com/AhmadAL-Quraan/Inception) at 42, I made a github action workflow in it, so it could trigger, test and build.
+
+
+Every push to main (or PR), this happens automatically:
+
+- Lint jobs fire first (parallel, ~seconds) — hadolint checks your Dockerfiles, yamllint checks docker-compose.yml. Mostly just warnings right now.
+- Test job fires after — spins up two VMs (Ubuntu 22.04 + 24.04), validates your compose file, then tries to actually build all 3 Docker images.
+- I will get a ✅ or ❌ on the commit/PR in GitHub, and the README badge updates to match.
+
+
+
+## Task3 
+
+Run it with act. Reproduce your workflow locally with act before pushing it. Document
+any differences in your journal.
+
+
+* Right now it will always give fails, because I didn't yet edit the Dockerfiles, and docker-compose.yml (still empty), but I will check later on when I add more instruction to it.
+![](./pic/act.png)
