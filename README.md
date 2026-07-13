@@ -35,6 +35,7 @@
 [2](week2/) | PR's
 [3](week3/) | Issue Triage & Bug Reproduction
 [4](week4/) | Code Review & the Maintainer Mindset
+[5](week5/) | Testing and Github action
 
 
 ## Resources to useful stuff 
