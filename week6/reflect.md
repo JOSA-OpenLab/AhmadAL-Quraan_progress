@@ -5,7 +5,9 @@
 
 ## Task2 
 
-[Inception project](https://ahmadal-quraan.github.io/Inception/): I made an mkdocs for my latest project at 42, called "Inception".
+[Inception docs](https://ahmadal-quraan.github.io/Inception/): I made an mkdocs for my latest project at 42, called "Inception".
 
+## Task3 
 
+[Adding adr](https://github.com/AhmadAL-Quraan/Inception/tree/main/docs/adr) also to inception project.
 
