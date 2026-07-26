@@ -16,8 +16,7 @@
 
 ---
 
-> “My sleep schedule died so this repository could live.”
----
+
 ## Holy Questions 
 >  To learn anything in depth, ask these.
 1. What is it?
@@ -36,35 +35,9 @@
 [3](week3/) | Issue Triage & Bug Reproduction
 [4](week4/) | Code Review & the Maintainer Mindset
 [5](week5/) | Testing and Github action
+[6](https://github.com/JOSA-OpenLab/AhmadAL-Quraan_progress/tree/main/week6) | Documentation
 
 
-## Resources to useful stuff 
-
-### Git
 
 
-| Resources | Description |  
-|---|---|
-| [oh_my_git](https://ohmygit.org/) | Enjoyable way to learn git|
-[Git book ](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain?utm_source=chatgpt.com)| The “official unofficial” deep Git book. 
- [v1 - ohmy,git ](https://ohshitgit.com/), [v2 - Dangit](https://dangitgit.com/?utm_source=chatgpt.com)  |  Did you ever feel like an idiot sandwich ?  save yourself in git
- [Git explorer](https://git.gaozih.com/)  | Find the right command for you
-
-
-### Linux 
-| Resources | Description |  
-|---|---|
-| [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/?utm_source=chatgpt.com) | Nerds MIT students making gods work 
-[Linux Journey](https://linuxjourney.org/) | Your Home for Everything Linux
-[tldr pages](https://tldr.sh/?utm_source=chatgpt.com)| Community-maintained simplified man pages.
-[Command Line Fu](https://www.commandlinefu.com/commands/browse?utm_source=chatgpt.com) | Shell tricks and terminal wizardry.
-[OverTheWire](https://overthewire.org/wargames/) | wargames to learn Linux & Cyber
-[SadServer](https://sadservers.com/) | Hands-On Linux & DevOps challenges
-
-### Open source/ Engineering
-| Resources | Description |  
-|---|---|
-[Open Source Guides](https://opensource.guide/) | Guide for open source contribution
-[First contribution](https://firstcontributions.github.io/?utm_source=chatgpt.com) | Beginner-friendly OSS contribution walkthrough.
-[System Design primer](https://github.com/donnemartin/system-design-primer?utm_source=chatgpt.com) | Resources once you move deeper into backend/system design.
 

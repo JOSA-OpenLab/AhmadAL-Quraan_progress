@@ -106,25 +106,5 @@ Since the goal was to read actual *discussion threads* on merged PRs, Prometheus
 - [Go Wiki: CodeReview](https://github.com/golang/go/wiki/CodeReview/2f90205c2a5e179948caf9be2b5662bf0102e40e) — the general Go project conventions around review etiquette (e.g., "DO NOT REVIEW" / "DO NOT SUBMIT" markers, replying only inside the review tool, not by email) — useful as a comparison point even though it's Gerrit-specific rather than GitHub-specific.
 - [golang.org/x/review/git-codereview docs](https://pkg.go.dev/golang.org/x/review/git-codereview) — explains mechanics like `-trybot` (kicks off CI) and `-autosubmit` flags, which parallel Prometheus's `/prombench` bot in spirit: automated gates that reduce how much reviewers have to manually verify.
 
----
 
-## Synthesized review norms
-
-### What gets flagged
-- **Architectural/API surface changes** — anything that increases coupling between packages, accidentally exports internal types, or makes core logic (like the query engine) harder to trace later. This is treated as a first-class review concern even when the change also delivers a clear, measurable win.
-- **Style consistency**, enforced even inside large, already-complex, already-important PRs (e.g., local variable capitalization). Being a "big" PR doesn't buy exemption from small-scale conventions.
-- **Control-flow cleanliness** — redundant loops, unnecessary conditionals — flagged as nits even when functionally harmless.
-- **Documentation ergonomics** — comment placement that affects IDE tooltip behavior was treated as worth raising, not dismissed as bikeshedding.
-- **Performance regressions**, but checked empirically (via the benchmarking bot) rather than argued about in the abstract.
-
-### What doesn't get flagged
-- **Unfinished or rough submissions.** The big PromQL rewrite was explicitly posted mid-progress, and no one objected to reviewing work-in-progress code — the norm is "share early," not "polish before you show anyone."
-- **Small, well-understood performance tradeoffs**, once named. A few percent slowdown on already-fast, small-scale queries was accepted without pushback after the author flagged it upfront.
-- **Routine, low-risk changes** (dependency bumps, release-candidate cuts) get essentially no line-by-line scrutiny — review effort scales down sharply once risk is low and the safety net (CI, benchmarks) is automated.
-
-### How disagreements got resolved
-- **Named tradeoffs, not votes.** The maintainer making the final call (fabxc) didn't average opinions or defer to seniority — he explicitly laid out both sides, said the decision was genuinely hard, and then made a call, while being clear the underlying concern (rising complexity) wasn't being dismissed, just accepted this once.
-- **The objecting reviewer's concern remained on record even after being overruled.** juliusv's "frog in boiling water" framing didn't block the merge, but it wasn't waved away either — it reads as a deliberate, documented trade rather than a maintainer simply winning an argument.
-- **A second sign-off was treated as a real gate**, not a courtesy, even for a maintainer with commit rights — the author explicitly waited for another maintainer's OK on the large PR.
-- **Automation substitutes for debate where possible.** For the release PR, instead of reviewers manually reasoning about performance impact, a bot ran an actual before/after benchmark and posted the dashboard — turning a potential subjective disagreement into an empirical check.
 
