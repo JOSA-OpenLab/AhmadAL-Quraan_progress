@@ -17,16 +17,6 @@
 ---
 
 
-## Holy Questions 
->  To learn anything in depth, ask these.
-1. What is it?
-2. Why does it exist?
-3. How do I use it?
-4. What breaks it?
-5. How does it work internally?
-6. How is it built?
-7. Can I build a small version of it?
-
 ## Contents
 | Week | Topic |  
 |---|---|
