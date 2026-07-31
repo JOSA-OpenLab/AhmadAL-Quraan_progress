@@ -50,4 +50,4 @@ any differences in your journal.
 
 
 * Right now it will always give fails, because I didn't yet edit the Dockerfiles, and docker-compose.yml (still empty), but I will check later on when I add more instruction to it.
-![](./pic/act.png)
+![](JOSA/materials/week5/pic/act.png)

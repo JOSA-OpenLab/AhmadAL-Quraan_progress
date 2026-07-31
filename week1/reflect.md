@@ -13,7 +13,7 @@ Task: Using `git cat-file` to walk from the commit object to it's tree to a blob
 Task: Break some repo and recover it using `git reflog`
 
 * This is the current log of our repo, we have 6 commits.
-![](../pic/git_log.png)
+![](JOSA/materials/pic/git_log.png)
 
 
 ## Reset hard 
