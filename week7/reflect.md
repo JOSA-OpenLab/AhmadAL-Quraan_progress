@@ -29,4 +29,6 @@ A successful check prints `Verified OK`, confirming the archive was produced by 
 exact workflow at this exact tag and has not been modified since.
 
 
-## [Task3]
+## [Task3](https://github.com/JOSA-OpenLab/AhmadAL-Quraan_progress/blob/main/week7/content/Journal%20Entry%2C%20SBOM%20%26%20Vulnerability%20Scan%20(MariaDB%20image).md)
+
+Case study using sbom and Vulnerability scan using grype on a docker image (mariadb) in inception project.
