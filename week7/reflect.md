@@ -36,11 +36,11 @@ Case study using sbom and Vulnerability scan using grype on a docker image (mari
 
 
 
-## [Task4](https://github.com/AhmadAL-Quraan/Inception/pull/6)
+## [Task4](https://github.com/dexpace/kuri/pull/163)
 
-* Run scorecard on Inception project.
-* Found 2 main issues, the workflow `test-stack.yml` & `release.yml`
-* Opened a PR to solve it by changing edit/add permissions in both workflows.
+* Run scorecard on Kuri project.
+* The main issue Scorecard flagged: **`Dependency-Update-Tool` scored 0/10** , `dexpace/kuri` had no Dependabot or Renovate configuration at all, meaning nobody/nothing was automatically checking for outdated or vulnerable dependencies.
+* Added `.github/dependabot.yml`, configuring automated weekly update checks across three ecosystems the project actually uses — `gradle` (the Kotlin build), `gomod` (the separate Go module in `tools/`), and `github-actions` (workflow versions).
 
-![](./content/pic/scorecard1.png)
-![](./content/pic/scorecard2.png)
+
+
