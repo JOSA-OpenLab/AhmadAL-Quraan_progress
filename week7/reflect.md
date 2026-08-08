@@ -31,4 +31,16 @@ exact workflow at this exact tag and has not been modified since.
 
 ## [Task3](https://github.com/JOSA-OpenLab/AhmadAL-Quraan_progress/blob/main/week7/content/Journal%20Entry%2C%20SBOM%20%26%20Vulnerability%20Scan%20(MariaDB%20image).md)
 
+
 Case study using sbom and Vulnerability scan using grype on a docker image (mariadb) in inception project.
+
+
+
+## [Task4](https://github.com/AhmadAL-Quraan/Inception/pull/6)
+
+* Run scorecard on Inception project.
+* Found 2 main issues, the workflow `test-stack.yml` & `release.yml`
+* Opened a PR to solve it by changing edit/add permissions in both workflows.
+
+![](./content/pic/scorecard1.png)
+![](./content/pic/scorecard2.png)
