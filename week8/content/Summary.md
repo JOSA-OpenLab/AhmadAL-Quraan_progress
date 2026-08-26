@@ -8,14 +8,18 @@
 2) Fix what cost the most, not what look slowest.
 3) Measure again and compare.
 
+### How ? 
 
+* Test in python:
+1) Always make a `benchmark.py` file
+2) Import the required code to test
+3) run using `py-spy` -> `py-spy record -o flame.svg -- python benchmark.py` see example on this [PR](https://github.com/gruns/icecream/pull/247)
 ## Flame graph
 
 Visualize where your program is spending it's time
 
 
-![flame_grpah_xo.png](../pic/flame_grpah_xo.png)
-![flame_graph_ex.png](../pic/flame_graph_ex.png)
+![[flame_grpah_xo.png]]![[flame_graph_ex.png]]
 
 
 ## Tools for profiling 

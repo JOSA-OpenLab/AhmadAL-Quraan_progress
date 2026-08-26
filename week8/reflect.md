@@ -19,7 +19,7 @@
 
 [MySQL CPU Flame Graph]([https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html?utm_source=chatgpt.com](https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html?utm_source=chatgpt.com#:~:text=5%2E1%2E%20MySQL))
 
-![mysql_flame.png](./pic/mysql_flame.png)
+![[mysql_flame.png]]
 
 The first example is a production MySQL server with unexpectedly high CPU usage. The raw profiler output initially made `add_to_status()` / `calc_sum_of_all_status()` look hot, but the flame graph showed that **most of the CPU time was actually in `JOIN::exec`**. That redirected the investigation toward the SQL execution path and ultimately helped solve the issue.
 
@@ -35,7 +35,7 @@ The first example is a production MySQL server with unexpectedly high CPU usage.
 [ext4 File-System Archive](https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html?utm_source=chatgpt.com#FileSystems:~:text=5%2E2%2E%20File%20Systems)
 
 
-![ext4_flame.png](./pic/ext4_flame.png)
+![[ext4_flame.png]]
 
 The second example profiles the Linux kernel while an ext4 filesystem is being archived. The graph shows significant kernel CPU time in `sys_newfstatat()` and `sys_getdents()`, which are related to **filesystem metadata work while walking directories**. It also shows `sys_openat()` for opening files and page faults as file contents are brought into userspace.
 
@@ -51,7 +51,7 @@ The second example profiles the Linux kernel while an ext4 filesystem is being a
 
 [NUMA Rebalancing](https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html?utm_source=chatgpt.com#:~:text=5%2E5%2E%20NUMA%20Rebalancing)
 
-![numa_flame.png](./pic/numa_flame.png)
+![[numa_flame.png]]
 
 The third example is particularly interesting. Netflix encountered unexpectedly high **system CPU usage**, around 60%. The initial flame graph looked messy, with many thin "hairs" caused by interrupts, making the important pattern difficult to see. Reversing the merge/visualization order revealed two large towers accounting for **55% of all samples**.
 
