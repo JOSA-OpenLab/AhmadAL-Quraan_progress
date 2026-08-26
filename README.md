@@ -18,15 +18,17 @@
 
 
 ## Contents
-| Week        | Topic                                |     |
-| ----------- | ------------------------------------ | --- |
-| [1](week1/) | Git Internals                        |     |
-| [2](week2/) | PR's                                 |     |
-| [3](week3/) | Issue Triage & Bug Reproduction      |     |
-| [4](week4/) | Code Review & the Maintainer Mindset |     |
-| [5](week5/) | Testing and Github action            |     |
-| [6](week6/) | Documentation                        |     |
-| [7](week7/) | Security & the Software Supply Chain |     |
+| Week                                                                         | Topic                                                  |     |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------ | --- |
+| [1](week1/)                                                                  | Git Internals                                          |     |
+| [2](week2/)                                                                  | PR's                                                   |     |
+| [3](week3/)                                                                  | Issue Triage & Bug Reproduction                        |     |
+| [4](week4/)                                                                  | Code Review & the Maintainer Mindset                   |     |
+| [5](week5/)                                                                  | Testing and Github action                              |     |
+| [6](week6/)                                                                  | Documentation                                          |     |
+| [7](week7/)                                                                  | Security & the Software Supply Chain                   |     |
+| [8](https://github.com/JOSA-OpenLab/AhmadAL-Quraan_progress/tree/main/week8) | Performance, Profiling & Debugging                     |     |
+| [9](https://github.com/JOSA-OpenLab/AhmadAL-Quraan_progress/tree/main/week9) | Building Your Own OSS Project: Licensing & Foundations |     |
 
 
 
